@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Peide  Cai | blank</title>
+<title>Peide  Cai | Vision-based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -30,7 +30,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍪</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/autorace-dirl/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -111,8 +111,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 Projects
@@ -159,56 +157,37 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Vision-based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</h1>
+    <p class="post-description">IEEE Robotics and Automation Letters (RA-L) & IROS 2021</p>
+  </header>
 
+  <article>
+    <!-- [[Paper]](caipeide.site) -->
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/29/github-metadata.html">a post with github metadata</a></h3>
-        <p class="post-meta">September 29, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/twitter.html">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2018/12/22/distill.html">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<h3 id="video">Video</h3>
+<p style="margin:25px"> </p>
+<iframe width="672" height="378" src="https://www.youtube.com/embed/tcP3gXtUj3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<hr />
 
+<h3 id="abstract">Abstract</h3>
+<p style="margin:25px"> </p>
+<p style="text-align:justify; text-justify:inter-ideograph;">
+Autonomous car racing is a challenging task in the robotic control area. Traditional modular methods for this task require accurate mapping, localization and planning, which makes them computationally inefficient and sensitive to environmental changes. Recently, deep-learning-based end-to-end systems have shown promising results for autonomous driving/racing. However, they are commonly implemented by <strong>supervised imitation learning (IL)</strong>, which suffers from the distribution mismatch problem, or by <strong>reinforcement learning (RL)</strong>, which requires a huge amount of risky interaction data. In this work, we present a general deep imitative reinforcement learning approach (DIRL) which successfully achieves agile autonomous racing using visual inputs. The driving knowledge is acquired from both IL and model-based RL, where the agent can learn from human teachers as well as self-improve by safely interacting with an offline world model. We validate our algorithm both in a high-fidelity driving simulation and on a real-world 1/20-scale RC-car with limited onboard computation. The evaluation results demonstrate that our method outperforms previous IL and RL methods in terms of <strong>sample efficiency</strong> and <strong>task performance</strong>.
+</p>
 
+<hr />
+
+<h3 id="overview-of-the-algorithm">Overview of the Algorithm</h3>
+<p style="margin:25px"> </p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/autorace-dirl/world-model.png" alt="" title="example image" />
+    </div>
+</div>
+
+  </article>
 
 </div>
 
