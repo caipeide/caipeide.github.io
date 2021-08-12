@@ -1,8 +1,6 @@
-@misc{cai2021dignet,
-      title={DiGNet: Learning Scalable Self-Driving Policies for Generic Traffic Scenarios with Graph Neural Networks}, 
-      author={Peide Cai and Hengli Wang and Yuxiang Sun and Ming Liu},
-      year={2021},
-      eprint={2011.06775},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@article{cai2021dignet,
+  title={DiGNet: Learning Scalable Self-Driving Policies for Generic Traffic Scenarios with Graph Neural Networks},
+  author={Cai, Peide and Wang, Hengli and Sun, Yuxiang and Liu, Ming},
+  journal={arXiv preprint arXiv:2011.06775},
+  year={2021}
 }
