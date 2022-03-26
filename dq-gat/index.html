@@ -164,7 +164,14 @@
   </header>
 
   <article class="post-content">
-    <!-- [[Paper]](caipeide.site) -->
+    <hr />
+<p style="margin:25px"> </p>
+<h3 id="video">Video</h3>
+<p style="margin:25px"> </p>
+<center>
+<iframe width="672" height="378" src="https://www.youtube.com/embed/PavrT0V6_0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</center>
+
 <hr />
 
 <p style="margin:25px"> </p>
@@ -173,8 +180,7 @@
 
 <p style="margin:25px"> </p>
 <p style="text-align:justify; text-justify:inter-ideograph;">
-Autonomous driving in multi-agent and dynamic traffic scenarios is challenging, where the behaviors of other road agents are uncertain and hard to model explicitly, and the egovehicle should apply complicated negotiation skills with them to achieve both safe and efficient driving in various settings, such
-as giving way, merging and taking turns. Traditional planning methods are largely rule-based and scale poorly in these complex dynamic scenarios, often leading to reactive or even overly conservative behaviors. Therefore, they require tedious human efforts to maintain workable. Recently, deep learning-based methods have shown promising results with better generalization capability but less hand engineering effort. However, they are either implemented with <strong>supervised imitation learning (IL)</strong> that suffers from the dataset bias and distribution mismatch problems, or trained with <strong>deep reinforcement learning (DRL) </strong>but focus on one specific traffic scenario. In this work, we propose DQ-GAT to achieve scalable and proactive autonomous driving, where <strong>graph attention-based networks</strong> are used to implicitly model interactions, and asynchronous <strong>deep Q-learning</strong> is employed to train the network end-to-end in an unsupervised manner. Extensive experiments through a high-fidelity driving simulation show that our method can better <strong>trade-off safety and efficiency in both seen and unseen scenarios</strong>, achieving higher goal success rates than the baselines (at most 4.7×) with comparable task completion time. 
+Autonomous driving in multi-agent and dynamic traffic scenarios is challenging, where the behaviors of other road agents are uncertain and hard to model explicitly, and the ego-vehicle should apply complicated negotiation skills with them to achieve both safe and efficient driving in various settings, such as yielding, merging and taking turns. Traditional planning methods are largely rule-based and scale poorly in these complex dynamic scenarios, often leading to reactive or even overly conservative behaviors. Therefore, they require tedious human efforts to maintain workability. Recently, deep learning-based methods have shown promising results with better generalization capability but less hand engineering effort. However, they are either implemented with supervised imitation learning (IL) that suffers from the dataset bias and distribution mismatch problems, or trained with deep reinforcement learning (DRL) but focus on one specific traffic scenario. In this work, we propose DQ-GAT to achieve scalable and proactive autonomous driving, where graph attention-based networks are used to implicitly model interactions, and deep Q-learning is employed to train the network end-to-end in an unsupervised manner. <strong>Extensive experiments in a high-fidelity driving simulator show that our method achieves higher success rates than previous learning-based methods and a traditional rule-based method, and better trades off safety and efficiency in both seen and unseen scenarios. Moreover, qualitative results on a trajectory dataset indicate that our learned policy can be transferred to the real world for practical applications with real-time speeds. </strong>
 </p>
 
 <hr />
@@ -187,13 +193,6 @@ as giving way, merging and taking turns. Traditional planning methods are largel
     </div>
 </div>
 
-<hr />
-<p style="margin:25px"> </p>
-<h3 id="video">Video</h3>
-<p style="margin:25px"> </p>
-<center>
-<iframe width="672" height="378" src="https://www.youtube.com/embed/jWLnwt4va08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</center>
 <hr />
 
 <p style="margin:25px"> </p>
@@ -210,90 +209,96 @@ as giving way, merging and taking turns. Traditional planning methods are largel
 <img src="/assets/dq-gat/comparative.png" width="850" alt="图片名称" align="center" />
 </center>
 
-<hr />
 <p style="margin:25px"> </p>
-<h3 id="more-qualitative-results">More Qualitative Results</h3>
-<p style="margin:25px"> </p>
-<p style="margin:25px"> </p>
-<h4 id="t-left">T-Left</h4>
-<p style="margin:25px"> </p>
+
+<!-- 
+---
+<p style = "margin:25px"> </p>
+### More Qualitative Results
+<p style = "margin:25px"> </p>
+<p style = "margin:25px"> </p>
+#### T-Left
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/33.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/33.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/35.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/35.gif" alt="" title="example image"/>
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/37.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/37.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/39.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-left/39.gif" alt="" title="example image"/>
     </div>
 </div>
 
-<p style="margin:25px"> </p>
-<h4 id="t-merge">T-Merge</h4>
-<p style="margin:25px"> </p>
+<p style = "margin:25px"> </p>
+#### T-Merge
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-merge/34.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-merge/34.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-merge/37.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/t-merge/37.gif" alt="" title="example image"/>
     </div>
 </div>
 
-<p style="margin:25px"> </p>
-<h4 id="int-cross">Int-Cross</h4>
-<p style="margin:25px"> </p>
+<p style = "margin:25px"> </p>
+#### Int-Cross
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-cross/33.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-cross/33.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-cross/40.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-cross/40.gif" alt="" title="example image"/>
     </div>
 </div>
 
-<p style="margin:25px"> </p>
-<h4 id="int-left">Int-Left</h4>
-<p style="margin:25px"> </p>
+<p style = "margin:25px"> </p>
+#### Int-Left
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-left/36.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-left/36.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-left/38.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/int-left/38.gif" alt="" title="example image"/>
     </div>
 </div>
 
-<p style="margin:25px"> </p>
-<h4 id="roundabout-unseen">Roundabout <i>(unseen)</i></h4>
-<p style="margin:25px"> </p>
+
+<p style = "margin:25px"> </p>
+#### Roundabout <i>(unseen)</i>
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/round/38.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/round/38.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/round/39.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/round/39.gif" alt="" title="example image"/>
     </div>
 </div>
 
-<p style="margin:25px"> </p>
-<h4 id="five-way-int-unseen">Five-Way-Int <i>(unseen)</i></h4>
-<p style="margin:25px"> </p>
+
+<p style = "margin:25px"> </p>
+#### Five-Way-Int <i>(unseen)</i>
+<p style = "margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/five-way/18.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/five-way/18.gif" alt="" title="example image"/>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/five-way/37.gif" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="/assets/dq-gat/five-way/37.gif" alt="" title="example image"/>
     </div>
 </div>
+ -->
 
   </article>
 
@@ -321,12 +326,12 @@ as giving way, merging and taking turns. Traditional planning methods are largel
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Peide  Cai.
+    &copy; Copyright 2022 Peide  Cai.
     Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
     
     
-    Last updated: November 26, 2021.
+    Last updated: March 26, 2022.
     
   </div>
 </footer>
